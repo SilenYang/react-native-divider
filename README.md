@@ -5,7 +5,7 @@ a divider component for react-native
 ```js
 yarn add react-native-divider
 // or
-npm install react-native-divider -save
+npm install react-native-divider --save
 ```
 
 # usage
