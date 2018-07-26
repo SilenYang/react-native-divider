@@ -22,12 +22,12 @@ import Divider from 'react-native-divider';
 
 # Props
 
-| Prop          | Type                          | default           | Description                                                      |
-| ------------- | ----------------------------- | ----------------- | ---------------------------------------------------------------- |
-| `dashed`      | Boolean                       | false             | whether line is dashed                                           |
-| `orientation` | enum: `left` `center` `right` | left              | this is optional, if not set it will have the text in the center |
-| `borderColor` | String                        | `#e8e8e8`         | line color                                                       |
-| `color`       | String                        | `rgba(0,0,0,.85)` | font color                                                       |
+| Prop          | Type                          | default           | Description                                                    |
+| ------------- | ----------------------------- | ----------------- | -------------------------------------------------------------- |
+| `dashed`      | Boolean                       | false             | whether line is dashed                                         |
+| `orientation` | enum: `left` `center` `right` | left              | this is optional, if not set it will have the text in the left |
+| `borderColor` | String                        | `#e8e8e8`         | line color                                                     |
+| `color`       | String                        | `rgba(0,0,0,.85)` | font color                                                     |
 
 example:
 

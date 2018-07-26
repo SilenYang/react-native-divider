@@ -1,26 +1,26 @@
 {
-  "name": "react-native-divider",
-  "version": "1.0.1",
-  "description": "a divider component for react-native",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/SilenYang/react-native-divider.git"
-  },
-  "keywords": [
-    "react-native",
-    "react-native-divider"
-  ],
-  "author": "silenyang",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/SilenYang/react-native-divider/issues"
-  },
-  "homepage": "https://github.com/SilenYang/react-native-divider#readme",
-  "dependencies": {
-    "prop-types": "^15.6.1"
-  }
+    "name": "react-native-divider",
+    "version": "1.0.2",
+    "description": "a divider component for react-native",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/SilenYang/react-native-divider.git"
+    },
+    "keywords": [
+        "react-native",
+        "react-native-divider"
+    ],
+    "author": "silenyang",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/SilenYang/react-native-divider/issues"
+    },
+    "homepage": "https://github.com/SilenYang/react-native-divider#readme",
+    "dependencies": {
+        "prop-types": "^15.6.1"
+    }
 }
