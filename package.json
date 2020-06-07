@@ -21,6 +21,6 @@
     },
     "homepage": "https://github.com/SilenYang/react-native-divider#readme",
     "dependencies": {
-        "prop-types": "^15.6.1"
+        "prop-types": "^15.7.2"
     }
 }
