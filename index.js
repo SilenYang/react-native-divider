@@ -24,9 +24,6 @@ class Divider extends Component {
 
     render() {
         const props = this.props;
-        if (props.children.length == 0) {
-            props.orientation = 'center';
-        }
         return (
             <View style={styles.container}>
                 <View
@@ -37,7 +34,9 @@ class Divider extends Component {
                         props.orientation === 'left' ? styles.shortWidth : { flex: 1 },
                     ]}
                 />
-                <Text style={[styles.text, { color: props.color }]}>{props.children}</Text>
+                {props.children?
+                    <Text style={[styles.text, { color: props.color }]}>{props.children}</Text>
+                : null }
                 <View
                     style={[
                         styles.line,
