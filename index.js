@@ -12,18 +12,21 @@ class Divider extends Component {
         dashed: PropTypes.bool,
         color: PropTypes.string,
         borderColor: PropTypes.string,
-        orientation: PropTypes.oneOf(['left', 'center', 'right'])
+        orientation: PropTypes.oneOf(['left', 'center', 'right']),
     };
 
     static defaultProps = {
         dashed: false,
         orientation: 'left',
         color: 'rgba(0,0,0,.85)',
-        borderColor: '#e8e8e8'
+        borderColor: '#e8e8e8',
     };
 
     render() {
         const props = this.props;
+        if (props.children.length == 0) {
+            props.orientation = 'center';
+        }
         return (
             <View style={styles.container}>
                 <View
@@ -31,7 +34,7 @@ class Divider extends Component {
                         styles.line,
                         { borderColor: props.borderColor },
                         props.dashed && styles.dashed,
-                        props.orientation === 'left' ? styles.shortWidth : { flex: 1 }
+                        props.orientation === 'left' ? styles.shortWidth : { flex: 1 },
                     ]}
                 />
                 <Text style={[styles.text, { color: props.color }]}>{props.children}</Text>
@@ -40,7 +43,7 @@ class Divider extends Component {
                         styles.line,
                         { borderColor: props.borderColor },
                         props.dashed && styles.dashed,
-                        props.orientation === 'right' ? styles.shortWidth : { flex: 1 }
+                        props.orientation === 'right' ? styles.shortWidth : { flex: 1 },
                     ]}
                 />
             </View>
@@ -52,24 +55,24 @@ const styles = StyleSheet.create({
         height: 24,
         alignItems: 'center',
         flexDirection: 'row',
-        marginVertical: 6
+        marginVertical: 6,
     },
     line: {
         height: 24,
         borderBottomWidth: 1,
-        transform: [{ translateY: -12 }]
+        transform: [{ translateY: -12 }],
     },
     shortWidth: {
-        width: 20
+        width: 20,
     },
     dashed: {
-        borderStyle: 'dashed'
+        borderStyle: 'dashed',
     },
     text: {
         paddingHorizontal: 24,
         fontSize: 16,
-        fontWeight: '500'
-    }
+        fontWeight: '500',
+    },
 });
 
 export default Divider;

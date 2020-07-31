@@ -1,25 +1,27 @@
 {
-    "name": "react-native-divider",
-    "version": "1.0.3",
-    "description": "a divider component for react-native",
+    "name": "rn-divider",
+    "version": "2.0.0",
+    "description": "Divider component for react-native",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/SilenYang/react-native-divider.git"
+        "url": "https://github.com/null-none/rn-divider.git"
     },
     "keywords": [
         "react-native",
+        "rn",
+        "divider",
         "react-native-divider"
     ],
     "author": "silenyang",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/SilenYang/react-native-divider/issues"
+        "url": "https://github.com/null-none/rn-divider/issues"
     },
-    "homepage": "https://github.com/SilenYang/react-native-divider#readme",
+    "homepage": "https://github.com/null-none/rn-divider#readme",
     "dependencies": {
         "prop-types": "^15.7.2"
     }

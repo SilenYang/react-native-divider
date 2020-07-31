@@ -1,19 +1,19 @@
-# react-native-divider
+# rn-divider
 
 a divider component for react-native
 
 # Install
 
 ```js
-yarn add react-native-divider
+yarn add rn-divider
 // or
-npm install react-native-divider --save
+npm install rn-divider --save
 ```
 
 # usage
 
 ```js
-import Divider from 'react-native-divider';
+import Divider from 'rn-divider';
 
 <Divider>Divider</Divider>;
 ```
@@ -32,7 +32,7 @@ import Divider from 'react-native-divider';
 example:
 
 ```js
-import Divider from 'react-native-divider';
+import Divider from 'rn-divider';
 
 <Divider borderColor="#fff" color="#fff" orientation="center">
     Divider
