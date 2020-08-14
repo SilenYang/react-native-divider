@@ -14,7 +14,11 @@ const Divider = (props) => {
                     props.orientation === 'left' ? styles.shortWidth : { flex: 1 },
                 ]}
             />
-            <Text style={[styles.text, { color: props.color }]}>{props.children}</Text>
+            {!props.underline && (
+                <Text style={[styles.text, { color: props.color }]}>
+                    {props.children}
+                </Text>
+            )}
             <View
                 style={[
                     styles.line,
@@ -27,19 +31,20 @@ const Divider = (props) => {
     );
 };
 
-Divider.propTypes = {
+Separator.propTypes = {
     dashed: PropTypes.bool,
+    underline: PropTypes.bool,
     color: PropTypes.string,
     borderColor: PropTypes.string,
     orientation: PropTypes.oneOf(['left', 'center', 'right']),
-};
-
-Divider.defaultProps = {
+  };
+  
+  Separator.defaultProps = {
     dashed: false,
+    underline: false,
     orientation: 'left',
     color: 'rgba(0,0,0,.85)',
     borderColor: '#e8e8e8',
-};
-
+  };
 
 export default Divider;

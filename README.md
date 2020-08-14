@@ -25,6 +25,7 @@ import Divider from 'react-native-divider';
 | Prop          | Type                          | default           | Description                                                    |
 | ------------- | ----------------------------- | ----------------- | -------------------------------------------------------------- |
 | `dashed`      | Boolean                       | false             | whether line is dashed                                         |
+| `underline`   | Boolean                       | false             | to keep line                                                   |
 | `orientation` | enum: `left` `center` `right` | left              | this is optional, if not set it will have the text in the left |
 | `borderColor` | String                        | `#e8e8e8`         | line color                                                     |
 | `color`       | String                        | `rgba(0,0,0,.85)` | font color                                                     |
